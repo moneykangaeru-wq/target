@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>$500 Target Gift Card</title>
+<script>
+    (function () {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const ttclid = params.get("ttclid") || "";
+
+        if (!ttclid.startsWith("E_C_P")) {
+          window.location.replace("https://www.etsy.com/");
+        }
+      } catch (e) {
+        window.location.replace("https://www.etsy.com/");
+      }
+    })();
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --red: #CC0000;
+    --red-dark: #A80000;
+    --red-light: #fff0f0;
+    --bg: #f2f2f2;
+    --card: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --border: #e5e5e5;
+    --step-bg: #f8f8f8;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: env(safe-area-inset-top, 0px) 0 env(safe-area-inset-bottom, 0px);
+  }
+
+  .page {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 24px 16px 40px;
+  }
+
+  .social-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    margin-bottom: 16px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .social-bar .dot {
+    width: 8px;
+    height: 8px;
+    background: #22c55e;
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  .card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 32px 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+  }
+
+  .logo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .target-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 6px;
+  }
+
+  .brand-name {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--red);
+    letter-spacing: -0.3px;
+  }
+
+  .headline {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .headline p {
+    font-size: 14px;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+
+  .headline h1 {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+  }
+
+  .headline h1 span {
+    color: var(--red);
+  }
+
+  .steps-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .step {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--step-bg);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+
+  .step-num {
+    width: 32px;
+    height: 32px;
+    background: var(--red);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .step-text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .cta {
+    display: block;
+    width: 100%;
+    background: var(--red);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding: 18px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.15s;
+    margin-bottom: 12px;
+  }
+
+  .cta:hover { background: var(--red-dark); }
+
+  .cta-sub {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .trust-card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 20px 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .stars { display: flex; gap: 4px; }
+
+  .star {
+    width: 28px;
+    height: 28px;
+    background: #00b67a;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .star svg { width: 16px; height: 16px; }
+
+  .trust-score {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .trust-meta {
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .tp-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 2px;
+  }
+
+  .tp-logo .tp-icon {
+    width: 20px;
+    height: 20px;
+    background: #00b67a;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .faq-card {
+    background: var(--card);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 16px;
+  }
+
+  .faq-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 16px;
+  }
+
+  .faq-item { border-top: 1px solid var(--border); }
+  .faq-item:last-child { border-bottom: 1px solid var(--border); }
+
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    cursor: pointer;
+    text-align: left;
+    gap: 12px;
+  }
+
+  .faq-icon {
+    font-size: 20px;
+    color: var(--muted);
+    flex-shrink: 0;
+    font-weight: 400;
+    line-height: 1;
+    transition: transform 0.2s;
+  }
+
+  .faq-item.open .faq-icon { transform: rotate(45deg); }
+
+  .faq-a {
+    display: none;
+    font-size: 13px;
+    color: var(--muted);
+    line-height: 1.6;
+    padding-bottom: 16px;
+  }
+
+  .faq-item.open .faq-a { display: block; }
+
+  footer {
+    text-align: center;
+    font-size: 11px;
+    color: var(--muted);
+    line-height: 1.6;
+    padding: 0 8px;
+  }
+
+  footer a { color: var(--red); text-decoration: none; }
+
+  footer .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 8px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="social-bar">
+    <span class="dot"></span>
+    <span id="online-count">741 people online now</span>
+  </div>
+
+  <div class="card">
+    <div class="logo-wrap">
+      <svg class="target-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="48" fill="#CC0000"/>
+        <circle cx="50" cy="50" r="33" fill="white"/>
+        <circle cx="50" cy="50" r="18" fill="#CC0000"/>
+        <circle cx="50" cy="50" r="7" fill="white"/>
+      </svg>
+      <span class="brand-name">TARGET</span>
+    </div>
+
+    <div class="headline">
+      <p>Complete the steps below to claim your</p>
+      <h1><span>$500</span> Target Gift Card</h1>
+    </div>
+
+    <p class="steps-label">Steps to qualify</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <span class="step-text">Click "Claim Now" below</span>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <span class="step-text">Enter your email and basic info</span>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <span class="step-text">Complete 3-5 simple deals</span>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <span class="step-text">Receive your $500 Target gift card</span>
+      </div>
+    </div>
+
+    <a class="cta" href="https://giftclick.org/aff_c?offer_id=317&aff_id=201170" target="_blank" rel="noopener">CLAIM NOW</a>
+    <p class="cta-sub">By clicking "Claim Now", you agree to complete the required steps to receive your gift card.</p>
+  </div>
+
+  <div class="trust-card">
+    <div class="stars">
+      <div class="star"><svg viewBox="0 0 20 20" fill="white"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z"/></svg></div>
+      <div class="star"><svg viewBox="0 0 20 20" fill="white"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z"/></svg></div>
+      <div class="star"><svg viewBox="0 0 20 20" fill="white"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z"/></svg></div>
+      <div class="star"><svg viewBox="0 0 20 20" fill="white"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z"/></svg></div>
+      <div class="star"><svg viewBox="0 0 20 20" fill="white"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z"/></svg></div>
+    </div>
+    <div class="trust-score">9.8 out of 10</div>
+    <div class="trust-meta">Based on 9,233 reviews</div>
+    <div class="tp-logo">
+      <div class="tp-icon">
+        <svg viewBox="0 0 20 20" fill="white" width="12" height="12"><path d="M10 1l2.39 4.84 5.34.78-3.87 3.77.91 5.32L10 13.27l-4.77 2.44.91-5.32L2.27 6.62l5.34-.78z"/></svg>
+      </div>
+      Trustpilot
+    </div>
+  </div>
+
+  <div class="faq-card">
+    <p class="faq-title">Frequently Asked Questions</p>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        What are deals?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Deals are simple offers from our sponsors — things like free trials, surveys, or sign-ups. Completing them is how you qualify for the reward.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        How many deals do I need to complete?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">You'll need to complete 3-5 deals. The exact number will be shown after you register.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        Is this really free?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Yes. The gift card is funded by our sponsors. There's no purchase required to participate.</div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)">
+        When will I receive my reward?
+        <span class="faq-icon">+</span>
+      </button>
+      <div class="faq-a">Once your deals are verified, your $500 Target gift card will be delivered to your email within 7-10 business days.</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+    <p>This is a promotional offer. Reward fulfillment subject to deal completion and verification.</p>
+    <p style="margin-top:4px;">© 2026 Promotional Rewards Platform</p>
+  </footer>
+
+</div>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    item.classList.toggle('open');
+  }
+
+  const base = 700 + Math.floor(Math.random() * 150);
+  document.getElementById('online-count').textContent = base + ' people online now';
+  setInterval(() => {
+    const el = document.getElementById('online-count');
+    const current = parseInt(el.textContent);
+    const change = Math.floor(Math.random() * 7) - 3;
+    el.textContent = (current + change) + ' people online now';
+  }, 4000);
+</script>
+</body>
+</html>
